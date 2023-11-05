@@ -12,16 +12,24 @@ const Form = () => {
     setWidth1,
     setHeight,
     setHeight1,
-  } = useContext(DrawContext);
+  } = useContext(DrawContext); //import all variables from DrawContext.Provider
+
+  //handle width for wind 1
   const handleWidth = (e) => {
     setWidth(e.target.value);
   };
+
+  //handle height for wind 1
   const handleHeight = (e) => {
     setHeight(e.target.value);
   };
+
+  //handle width for wind 2
   const handleWidth1 = (e) => {
     setWidth1(e.target.value);
   };
+
+  //handle height for wind 2
   const handleHeight1 = (e) => {
     setHeight1(e.target.value);
   };
